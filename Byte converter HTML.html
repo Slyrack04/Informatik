@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keyword" content="Data Converter"/>
+	<meta name="description" content="Data converter for converting any kind of data"/>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="index.js"></script>
+		<title>Data Converter</title>
+	</head>
+	<body>
+	<main>
+	<div class="top">
+	<h2>Data Converter</h2>
+	</div>
+	<div class="selector1">
+	<select id="data">
+	<option value="B">Byte (B)</option>
+	<option value="KB">Kilobyte (KB)</option>
+	<option value="MB">Megabyte (MB)</option>
+	<option value="GB">Gigabyte (GB)</option>
+	<option value="TB">Terabyte (TB)</option>
+	<option value="PB">Petabyte (PB)</option>
+	</select>
+	<div class="input_value" id="inp1">
+	<input type="text" placeholder="0" id="txt1" readonly>
+	<br />
+	<div class="value">value</div>
+	</div>
+	</div>
+	<div class="selector1">
+	<select id="data2">
+	<option value="B2">Byte (B)</option>
+	<option value="KB2" selected>Kilobyte (KB)</option>
+	<option value="MB2">Megabyte (MB)</option>
+	<option value="GB2">Gigabyte (GB)</option>
+	<option value="TB2">Terabyte (TB)</option>
+	<option value="PB2">Petabyte (PB)</option>
+	</select>
+	<div class="input_value" id="inp2">
+	<input type="text" placeholder="0" id="txt2" readonly>
+	<br />
+	<div class="value">Result</div>
+	</div>
+	</div>
+	<center>
+	<button class="button" onclick="convert()">Convert</button>
+	</center>
+	<div class="keypad">
+	<div class="nums">
+	<button onclick="insert(7)">7</button>
+	<button onclick="insert(8)">8</button>
+	<button onclick="insert(9)">9</button>
+	<br />
+	<button onclick="insert(4)">4</button>
+	<button onclick="insert(5)">5</button>
+	<button onclick="insert(6)">6</button>
+	<br />
+	<button onclick="insert(1)">1</button>
+	<button onclick="insert(2)">2</button>
+	<button onclick="insert(3)">3</button>
+	<br />
+	<button onclick="insert('.')">.</button>
+	<button onclick="insert(0)" class="zero">0</button>
+	</div>
+	<div class="btns">
+	 <button class="clr" onclick="clr()">AC</button>
+	 <br />
+	 <button class="del" onclick="del()">×</button>
+	</div>
+	</div>
+	</main>
+	<script>
+	"use strict";
+	let txt1 = document.querySelector("#txt1");
+	let txt2 = document.querySelector("#txt2");
+	let data = document.querySelector("#data");
+  let data2 = document.querySelector("#data2");
+	let insert = (num)=>
+	{txt1.value+=num;}
+	let clr = ()=>
+	{txt1.value="";txt2.value="";}
+	let del = ()=>{txt1.value =
+	txt1.value
+	.slice(0,txt1.value.length-1);}
+	let convert = ()=>{
+	(data.value=="MB") && (data2.value=="MB2")?txt2.value=txt1.value:(data.value=="GB") && (data2.value=="GB2")?txt2.value=txt1.value:(data.value=="B") && (data2.value=="B2")?txt2.value=txt1.value:(data.value=="TB") && (data2.value=="TB2")?txt2.value=txt1.value:(data.value=="PB") && (data2.value=="PB2")?txt2.value=txt1.value:(data.value=="KB") && (data2.value=="KB2")?txt2.value=txt1.value:(data.value=="B") && (data2.value=="KB2")?txt2.value=txt1.value/1024:(data.value=="KB") && (data2.value=="B2")?txt2.value=txt1.value*1024:(data.value=="MB") && (data2.value=="B2")?txt2.value=txt1.value*1024*1024:(data.value=="GB") && (data2.value=="B2")?txt2.value=(txt1.value*1024*1024)*1024:(data.value=="GB") && (data2.value=="KB2")?txt2.value=(txt1.value*1024*1024):(data.value=="TB") && (data2.value=="B2")?txt2.value=(txt1.value*1024*1024)*1024*1024:(data.value=="TB") && (data2.value=="KB2")?txt2.value=(txt1.value*1024*1024)*1024:(data.value=="TB") && (data2.value=="MB2")?txt2.value=(txt1.value*1024*1024):(data.value=="PB") && (data2.value=="B2")?txt2.value=(txt1.value*1024*1024)*1024*1024*1024:(data.value=="PB") && (data2.value=="KB2")?txt2.value=(txt1.value*1024*1024)*1024*1024:(data.value=="PB") && (data2.value=="MB2")?txt2.value=(txt1.value*1024*1024)*1024:(data.value=="PB") && (data2.value=="GB2")?txt2.value=(txt1.value*1024*1024):(data.valuee=="GB") && (data2.value=="KB2")?txt2.value=txt1.value*1024*1024:(data.value=="KB") && (data2.value=="MB2")?txt2.value=txt1.value/1024:(data.value=="MB") && (data2.value=="KB2")?txt2.value=txt1.value*1024:(data.value=="MB") && (data2.value=="GB2")?txt2.value=txt1.value/1024:(data.value=="GB") && (data2.value=="MB2")?txt2.value=txt1.value*1024:(data.value=="GB") && (data2.value=="TB2")?txt2.value=txt1.value/1024:(data.value=="TB") && (data2.value=="GB2")?txt2.value=txt1.value*1024:(data.value=="TB") && (data2.value=="PB2")?txt2.value=txt1.value/1024:(data.value=="PB") && (data2.value=="TB2")?txt2.value=txt1.value*1024:(data.value=="B") && (data2.value=="MB2")?txt2.value=(txt1.value/1024)/1024:(data.value=="B") && (data2.value=="GB2")?txt2.value=(txt1.value/1024)/1024/1024:(data.value=="B") && (data2.value=="TB2")?txt2.value=(txt1.value/(1024)/1024/1024)/1024:(data.value=="B") && (data2.value=="PB2")?txt2.value=(txt1.value/(1024)/1024/1024)/1024/1024:(data.value=="KB") && (data2.value=="GB2")?txt2.value=(txt1.value/1024)/1024:(data.value=="KB") && (data2.value=="TB2")?txt2.value=(txt1.value/1024)/1024/1024:(data.value=="KB") && (data2.value=="PB2")?txt2.value=(txt1.value/(1024)/1024/1024)/1024:(data.value=="MB") && (data2.value=="TB2")?txt2.value=(txt1.value/1024)/1024:(data.value=="MB") && (data2.value=="PB2")?txt2.value=(txt1.value/1024)/1024/1024:(data.value=="GB") && (data2.value=="PB2")?txt2.value=(txt1.value/1024)/1024:txt2.value='can\'t convert';
+	}
+	</script>
+	</body>
+</html>

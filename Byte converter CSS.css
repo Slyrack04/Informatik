@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;500&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'Poppins', sans-serif;
+}
+body{
+	background:#000;
+}
+main{
+	width:100vw; 
+	height:100%;
+	background:#000;
+	color:#fff;
+	overflow:scroll;
+}
+.top{
+	width:100vw;
+	height:auto;
+	border-bottom:2px solid rgba(255,255,255,.15);
+	padding:10px;
+	margin-bottom:15px;
+}
+.top h2{
+	padding:10px;
+}
+.selector1{
+	width:100vw;
+	height:auto;
+	padding:10px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	margin:10px 0px;
+}
+input,select{
+	outline:none;
+	border:none;
+	padding:10px;
+	font-size:16px;
+	background:transparent;
+	color:#fff;
+	font-weight:bold;
+}
+input{
+	text-align:right;
+	max-width:200px;
+	font-size:21px;
+	margin-top:-10px;
+}
+::placeholder{
+	font-size:21px;
+	color:#fff;
+}
+.value{
+	float:right;
+	font-size:14px;
+	margin-top:-10px;
+}
+.keypad{
+	width:100vw;
+	height:auto;
+	border-top:2px solid rgba(255,255,255,.15);
+	display:flex;
+	align-items:center;
+	justify-content:space-evenly;
+	padding:10px;
+	margin-top:30px;
+}
+button{
+	width:70px;
+	height:70px;
+	padding:10px;
+	font-size:20px;
+	border:none;
+	outline:none;
+	background:rgba(255,255,255,.15);
+	border-radius:50px;
+	color:#fff;
+	font-weight:bold;
+	margin:5px;
+	transition:.15s;
+}
+button:active{
+	scale:.95;
+	background:rgba(255,255,255,.25);
+}
+.zero{
+	width:160px;
+	height:65px;
+}
+.btn{
+	display:inline-block;
+}
+.clr,.del{
+	height:150px;
+}
+.clr{
+	background:orange;
+}
+.del{
+	background:rgba(255,0,0,.45);
+}
+
+.button {
+  width: 70%;
+  height: 50px;
+  background: linear-gradient(to top, #003B6E, #0075DC);
+  border-radius: 25px;
+  position: relative;
+  transition:.15s;
+  margin:20px 0px;
+  margin-bottom:35px;
+}
+.button:active{
+	scale:.97;
+	background:rgba(255,255,255,.15);
+}
+.button:after {
+  content: "";
+  height: 1px;
+  width: 50%;
+  position: absolute;
+  left: -10px;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
+  animation: shadow 4s ease-in infinite;
+}
+@keyframes shadow {
+  0% {
+	opacity: 0;
+	transform: scaleX(1);
+	width: 1px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+  10% {
+	opacity: 1;
+	transform: scaleX(1);
+	transform: translateX(50px);
+	width: 200px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+  30% {
+	opacity: 0;
+	transform: scaleX(1);
+	transform: translateX(260px);
+	width: 1px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  } 
+  100% {
+	opacity: 0;
+	transform: scaleX(1);
+	transform: translateX(260px);
+	width: 1px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+}
+@keyframes shadow2 {
+	0% {
+	opacity: 0;
+	transform: scaleX(1);
+	width: 1px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+	10% {
+	opacity: 0;
+	transform: scaleX(1);
+	width: 1px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+  20% {
+	opacity: 1;
+	transform: scaleX(1);
+	transform: translateX(50px);
+	width: 200px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+  40% {
+	opacity: 0;
+	transform: scaleX(1);
+	transform: translateX(50px);
+	width: 200px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+  100% {
+	opacity: 0;
+	transform: scaleX(1);
+	transform: translateX(260px);
+	width: 1px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+
+  } 
+
+}
+.button:before {
+  content: "";
+  height: 1px;
+  width: 70%;
+  position: absolute;
+  left: 15px;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  animation: shadow2 4s ease-in infinite;
+}
+@media screen and (min-width:400px){
+	main{
+		width:410px;
+		height:710px;
+		border-radius:10px;
+		margin:0 auto;
+	}
+	body{
+		width:100vw;
+		height:100vh;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+	}
+	.selector1,.top,.keypad{
+		width:100%;
