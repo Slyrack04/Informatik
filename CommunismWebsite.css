@@ -49,3 +49,10 @@ pointer-events: none;
 	margin-left: auto;
 	margin-right: auto;
 }
+.centered-list {
+      text-align: center;
+}
+ul {
+      list-style: none;
+      color: #FFD700;
+}
