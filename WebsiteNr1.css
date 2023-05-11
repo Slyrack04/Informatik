@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .colorful-bar {
+    background-color: #ffa500;
+    height: 80px;
+    width: 100%;
+  }
+  
