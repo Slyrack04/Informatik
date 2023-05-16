@@ -14,7 +14,7 @@ h3{
 }
 p{
 	color:#FFD700;
-	margin:1px;
+	margin:10px;
 }
 .center {
 	display: block;
@@ -50,9 +50,9 @@ pointer-events: none;
 	margin-right: auto;
 }
 .centered-list {
-      text-align: center;
+	  text-align: center;
 }
 ul {
-      list-style: none;
-      color: #FFD700;
+	  list-style: none;
+	  color: #FFD700;
 }
