@@ -17,12 +17,13 @@ footer{
     text-align: center;
     font-size: small;
     margin: 0%;
-    padding: 0%;
+    padding-top: 2px;
+    padding-bottom: 2px;
     width: 100%;
 }
-.container{
+.Fußnote{
 
 }
-#Fußnote{
-    line-height: 1;
+.Menu{
+    margin-right: 20px;
 }
