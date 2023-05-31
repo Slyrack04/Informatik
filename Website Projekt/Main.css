@@ -43,6 +43,13 @@ p{
 a{
     color: rgb(0, 255, 0);
 }
+label{
+    color: rgb(0, 255, 0);
+    margin-left: 5%;
+}
+.input{
+    margin-left: 15%;
+}
 .Fußnote{
     line-height: 0.4px;
 }
