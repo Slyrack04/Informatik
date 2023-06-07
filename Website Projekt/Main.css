@@ -100,9 +100,8 @@ a{
         left: -500px;
         top: -500px;
         transform-style: preserve-3d;
-        animation: move 5s ease-out;
+        animation: move infinite forwards;
         animation-fill-mode: forwards;
-        animation-iteration-count: 1;
     }
     .wall {
         background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3Rlcm5lfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60");
@@ -111,9 +110,7 @@ a{
         height: 100%;
         position: absolute;
         opacity: 0;
-        animation: fade 5s ease-out;
-        animation-delay: 0;
-        animation-iteration-count: 1;
+        animation: fade infinite forwards;
     }
 
     /* BILDER */

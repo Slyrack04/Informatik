@@ -1,5 +1,6 @@
 <html>
  <head>
+  <link rel="stylesheet" type="text/css" href="Bauern.css">
   <style>
   body{
   background-color:#ffa54f;
