@@ -7,6 +7,7 @@
     <div class="bildr">
       <img src= "Bilder/Bauernhaus.jpeg">
     </div>
+    <div class="center">
      <h1><ins>Bauern</ins></h1>
     <a href="Startseite">
       <button>Startseite</button>
@@ -35,7 +36,9 @@
         </TR>
       </Table>  
     </div>
+    </div>
     <hr>
+    <div class="center">
     <h1><ins>Zufriedenheit und Luxusg&uuml;ter</ins></h1>
     <div class="table2">
       <Table>
@@ -54,7 +57,8 @@
     <p>Es gibt aber auch Luxusg&uuml;ter f&uuml;r die Bauern, wie Schnaps und das Wirtshaus.
      Sie erh&ouml;hen die Zufriedenheit und bringen erheblich mehr Geld ein als die Grundbed&uuml;rfnis-G&uuml;ter.<br>
      Es haben jedoch auch noch andere Faktoren Einfluß auf die Zufriedenheit: Zeitung, Luftverschmutzung, Arbeitsbedingungen und ob gerade Frieden herrscht.<br></p>
-    <hr>
+    </div>
+     <hr>
     <img src= "Bilder/Weizenfelder.jpeg"width="500px"align="Left"alt="Saegewerk"style=float:left;border-style:solid;border-color:"#ffe4c4";Border-width:5px;margin-right:30px>
     <h1><ins>Baustoffe</ins></h1>
     <p>Das S&auml;gewerk ist eines der ersten Geb&auml;ude die man baut, denn Bretter die im S&auml;gewerk hergestellt werden, sind der Grundbaustoff in Anno.</p> <br><br><br>
