@@ -1,7 +1,40 @@
+body{
+    background-color:#ffa54f;
+    border-color:#eecbad;
+    color:	#8b4513;
+    border-style:dotted;
+    border-width: 5px;
+    text-align: left;
+    padding:50px;
+    }
+h1{
+    text-align: center;
+}
+.table1{
+    Border: 1; 
+    Width: 350; 
+    border-color:#000000;
+}
+.table2{
+    Border: 1;
+    Width: 400; 
+    align-content: right;
+    border-color:#000000;
+}
 .bildr{
-width="500px";
-style=float:right;
-Border-style:solid;
-Border-color:"#B1997D";
-Border-width:3px;
+    width: 500px;
+    float: right;
+    Border-style: solid;
+    Border-color: #B1997D;
+    Border-width: 3px;
+}
+.Überschrit{
+    text-align: center;
+    font-size: 30px;
+}
+td{
+    background-color: #ffe4c4;
+}
+hr{
+    color: #eecbad;
 }

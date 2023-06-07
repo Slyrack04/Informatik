@@ -1,94 +1,68 @@
 <html>
  <head>
-  <style>
-  body{
-  background-color:#ffa54f;
-  border-color:#eecbad;
-  color:	#8b4513;
-  border-style:dotted;
-  border-width: 5px;
-  text-allign: left;
-  padding:50px;
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="Bauern.css">
+  <title>Bauern</title>
  </head>
-<Body>
-  <img src= "Bilder/Bauernhaus.jpeg"width="500px"align="right"alt="Bauernhaus"style=float:right;border-style:solid;border-color:"#ffe4c4";Border- width:5px;margin-left:30px>
- <div style=
-   text-align:center;
-   font-size:30px>
-   <h1><ins>Bauern</ins></h1></div>
-<a href="Startseite">
-<button>Startseite</button></a><br>
-
-Die Bauern sind die Erste Bevoelkerungsstufe. Ein Bauernhaus kann bis zu 10 Bauern beherbergen die man durch das Versorgen mit Guetern wie: Marktplatz, Fische und Arbeitskleidung erreichen kann.<br>
-
-<div style=color:"#000000">
-<Table Border=1 
-Width=350 
-border-color:"#000000">
- <TR>
-  <TD Bgcolor="#ffe4c4"><p>Konsumgut</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>Marktplatz</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>Fische</p></TD>  
-  <TD Bgcolor="#ffe4c4"><p>Arbeitskleidung</p></TD>
- </TR>
- <TR>
-  <TD Bgcolor="#ffe4c4"><p>Einwohnerplus</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>5</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>3</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>2</p></TD>
- </TR>
- <TR>
-  <TD Bgcolor="#ffe4c4"><p>Produktionsgebaeude</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>Marktplatz</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>Fischerei</p></TD>  
-  <TD Bgcolor="#ffe4c4"><p>Schaeferei, Weberei</p></TD>
- </TR>
-</Table>
-</div>
- <hr>
-<div style=
- text-align:center;>
- <h1><ins>Zufriedenheit und Luxusgueter</ins></h1>
-</div>
-
-<Table Border=1 Width=400 align=right border-color:"#000000">
- <TR> 
-  <TD Bgcolor="#ffe4c4"><p>Luxusgut</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>Wirtshaus</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>Schnaps</p></TD>
- </TR>
- <TR>
-  <TD Bgcolor="#ffe4c4"><p>Zufriedenheit</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>+12</p></TD>
-  <TD Bgcolor="#ffe4c4"><p>+8</p></TD>
- </TR>
-</Table> 
-
-Es gibt aber auch Luxusgueter fuer die Bauern, wie Schnaps und das Wirtshaus.
-Sie erhoehen die Zufriedenheit und bringen erheblich mehr Geld ein als die Grundbeduerfnis-Gueter.<br>
-Es haben jedoch auch noch andere faktoren einfluss auf die Zufriedenheit: Zeitung, Luftverschmutzung, Arbeitsbedingungen und ob gerade Frieden herrscht.<br>
-<hr>
-
- <img src= "Bilder/Weizenfelder.jpeg"width="500px"align="Left"alt="Saegewerk"style=float:left;border-style:solid;border-color:"#ffe4c4";Border-width:5px;margin-right:30px>
-
-<div style=text-align:center;>
-<h1><ins>Baustoffe</ins></h1></div>
-
-Das Saegewerk ist eines der ersten Gebaeude die man baut, denn Bretter die im Saegewerk hergestellt werden sind der Grundbaustoff in Anno. <br><br><br>
-<hr>
-
-<div style=text-align:center;>
-<h1><ins>Aufwertung zum Arbeiterhaus</ins></h1></div>
-
-Um Bauernhaeuser zu <a href="Arbeiter">Arbeiter</a>haeusern upzugraden, braucht man 10 Bretter, sowie eine vollstaendige versorgung der Grundbeduerfnisse.<br><br><br>
-<hr>
-
-<div style=text-align:center;>
-<h1><ins>Arbeitskraefte</ins></h1></div>
-
-Die Arbeitskraefte der Bauern werden zum groessten Teil im Landwirtschaftlichen aspekt gebraucht. Einige Beispiele sind: Der Kartoffelhof, der Kartoffeln fuer die Schnapsproduktion herstellt, Schweinestall, der fuer die Seifenproduktion bei den <a href="Arbeiter">Arbeiter</a> gebraucht wird oder der Weinberg, der fuer die Produktion von Sekt fuer die <a href="Investoren">Investoren</a>gebraucht wird.
-</Body>
-
+  <Body>
+    <div class="bildr">
+      <img src= "Bilder/Bauernhaus.jpeg">
+    </div>
+     <h1><ins>Bauern</ins></h1>
+    <a href="Startseite">
+      <button>Startseite</button>
+    </a>
+    <br>
+    <p>Die Bauern sind die Erste Bev&ouml;lkerungsstufe. Ein Bauernhaus kann bis zu 10 Bauern beherbergen die man durch das Versorgen mit Guetern wie: Marktplatz, Fische und Arbeitskleidung erreichen kann.</p><br>
+    <div class="table1">
+      <Table>
+        <TR>
+          <TD><p>Konsumgut</p></TD>
+          <TD><p>Marktplatz</p></TD>
+          <TD><p>Fische</p></TD>  
+          <TD><p>Arbeitskleidung</p></TD>
+        </TR>
+        <TR>
+          <TD><p>Einwohnerplus</p></TD>
+          <TD><p>5</p></TD>
+          <TD><p>3</p></TD>
+          <TD><p>2</p></TD>
+        </TR>
+        <TR>
+          <TD><p>Produktionsgeb&auml;ude</p></TD>
+          <TD><p>Marktplatz</p></TD>
+          <TD><p>Fischerei</p></TD>  
+          <TD><p>Sch&auml;ferei, Weberei</p></TD>
+        </TR>
+      </Table>  
+    </div>
+    <hr>
+    <h1><ins>Zufriedenheit und Luxusg&uml;ter</ins></h1>
+    <div class="table2">
+      <Table>
+        <TR> 
+          <TD><p>Luxusgut</p></TD>
+          <TD><p>Wirtshaus</p></TD>
+          <TD><p>Schnaps</p></TD>
+        </TR>
+        <TR>
+          <TD><p>Zufriedenheit</p></TD>
+          <TD><p>+12</p></TD>
+          <TD><p>+8</p></TD>
+        </TR>
+      </Table> 
+    </div>
+    <p>Es gibt aber auch Luxusg&uuml;ter f&uuml;r die Bauern, wie Schnaps und das Wirtshaus.
+     Sie erh&ouml;hen die Zufriedenheit und bringen erheblich mehr Geld ein als die Grundbed&uuml;rfnis-G&uuml;ter.<br>
+     Es haben jedoch auch noch andere Faktoren Einfluß auf die Zufriedenheit: Zeitung, Luftverschmutzung, Arbeitsbedingungen und ob gerade Frieden herrscht.<br></p>
+    <hr>
+    <img src= "Bilder/Weizenfelder.jpeg"width="500px"align="Left"alt="Saegewerk"style=float:left;border-style:solid;border-color:"#ffe4c4";Border-width:5px;margin-right:30px>
+    <h1><ins>Baustoffe</ins></h1>
+    <p>Das S&auml;gewerk ist eines der ersten Geb&auml;ude die man baut, denn Bretter die im S&auml;gewerk hergestellt werden, sind der Grundbaustoff in Anno.</p> <br><br><br>
+    <hr>
+    <h1><ins>Aufwertung zum Arbeiterhaus</ins></h1>
+    <p>Um Bauernh&auml;user zu <a href="Arbeiter">Arbeiter</a>h&auml;usern upzugraden, braucht man 10 Bretter, sowie eine vollst&auml;ndige Versorgung der Grundbed&uuml;rfnisse.</p><br><br><br>
+    <hr>
+    <h1><ins>Arbeitskr&auml;fte</ins></h1>
+    <p>Die Arbeitskr&auml;fte der Bauern werden zum gr&ouml;ßten Teil im landwirtschaftlichen Aspekt gebraucht. Einige Beispiele sind: Der Kartoffelhof, der Kartoffeln f&uuml;r die Schnapsproduktion herstellt; Schweinestall, der f&uuml;r die Seifenproduktion bei den <a href="Arbeiter">Arbeitern</a> gebraucht wird oder der Weinberg, der f&uuml;r die Produktion von Sekt f&uuml;r die <a href="Investoren">Investoren</a> gebraucht wird.</p>
+  </Body>
 </html>
